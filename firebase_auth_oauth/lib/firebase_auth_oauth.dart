@@ -35,6 +35,10 @@ class FirebaseAuthOAuth implements platform.FirebaseAuthOAuth {
           [Map<String, String>? customOAuthParameters]) =>
       _delegate.linkWithOAuth(provider, scopes, customOAuthParameters);
 
+  Future<void> signOut() async {
+    await _delegate.signOut();
+  }
+
   @override
   platform.FirebaseAuthOAuth withApp(FirebaseApp app) =>
       FirebaseAuthOAuth(app: app);
