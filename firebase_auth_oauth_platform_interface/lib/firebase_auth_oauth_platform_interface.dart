@@ -59,6 +59,7 @@ class FirebaseAuthOAuth {
       [Map<String, String>? customOAuthParameters]) async {
     throw UnimplementedError("linkWithOAuth() is not implemented");
   }
+  
 
   /// Builds an instance of [FirebaseAuthOAuth] using a [FirebaseApp] instance
   FirebaseAuthOAuth withApp(FirebaseApp app) {
